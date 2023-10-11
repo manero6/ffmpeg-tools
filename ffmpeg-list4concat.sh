@@ -23,9 +23,7 @@ then
     esac
   else
     echo -e "\nCreating \"list\" file with the following content:\n"
-    echo "$LIST"
-    echo
-    echo "$LIST" > list
+    echo "$LIST" | tee list
   fi
 else
   echo ERROR: One argument must be given
